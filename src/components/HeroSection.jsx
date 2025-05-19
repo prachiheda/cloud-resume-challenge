@@ -60,6 +60,17 @@ export default function HeroSection() {
               <BlogIcon />
             </a>
           </div>
+
+          {/* Navigation Links */}
+          <nav className="mt-12 md:mt-16">
+            <ul className="flex flex-wrap justify-center gap-x-6 gap-y-3 md:gap-x-8">
+              <li><a href="#about-me" className="text-lg hover:text-purple-300 transition-colors">About Me</a></li>
+              <li><a href="#aws-technologies" className="text-lg hover:text-purple-300 transition-colors">AWS Portfolio</a></li>
+              <li><a href="#featured-projects" className="text-lg hover:text-purple-300 transition-colors">Projects</a></li>
+              <li><a href="#research-papers" className="text-lg hover:text-purple-300 transition-colors">Research Papers</a></li>
+            </ul>
+          </nav>
+
         </div>
       </div>
     </div>

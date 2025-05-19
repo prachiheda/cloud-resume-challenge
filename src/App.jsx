@@ -3,6 +3,7 @@ import ViewsCount from './components/ViewsCount';
 import ProjectCard from './components/ProjectCard';
 import HeroSection from './components/HeroSection';
 import AboutMeSection from './components/AboutMeSection';
+import PublishedPapersSection from './components/PublishedPapersSection';
 
 function App() {
   return (
@@ -14,10 +15,10 @@ function App() {
           <ViewsCount /> 
         </div>
 
-        <AboutMeSection />
+        <AboutMeSection id="about-me" />
 
         {/* AWS Technologies Section */}
-        <div className="text-center">
+        <div id="aws-technologies" className="text-center">
           <h2 className="text-3xl font-bold mb-10 pb-2 border-b border-white/30 inline-block">
             Built with AWS Cloud Technologies
           </h2>
@@ -44,7 +45,7 @@ function App() {
         </div>
 
         {/* Projects section */}
-        <div className="text-center">
+        <div id="featured-projects" className="text-center">
           <h2 className="text-3xl font-bold text-white mb-10 pb-2 border-b border-white/30 inline-block">
             Featured Projects
           </h2>
@@ -113,7 +114,7 @@ function App() {
             />
             <ProjectCard
               title="prachiblogs.com: Personal Tech & Project Blog"
-              image="/images/prachiblogs.png"
+              image="/images/blog.png"
               techStack="Hugo, GitHub Actions, Markdown"
               summary="A personal blog site built with the Hugo static site generator and deployed via GitHub Actions, featuring articles on technology and projects."
               githubLink="https://github.com/prachiheda/prachiblogs"
@@ -127,6 +128,9 @@ function App() {
             />
           </div>
         </div>
+
+        <PublishedPapersSection id="research-papers" />
+
       </div>
     </div>
   );
